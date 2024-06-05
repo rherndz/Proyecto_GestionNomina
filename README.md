@@ -8,7 +8,7 @@ Proyecto para practicar los conocimientos en c# - PROG1
 
 ![App Screenshot](https://github.com/rherndz/Proyecto_GestionNomina/blob/78d0b3fe02d3c4a670c07b19551423a51de14fd3/Capturas/Inicio%20de%20Sesion.png)
 
-![App Screenshot](https://github.com/rherndz/Proyecto_GestionNomina/blob/78d0b3fe02d3c4a670c07b19551423a51de14fd3/Capturas/Inicio%20-%20Usuario%20Administracion.png)
+![App Screenshot](https://github.com/rherndz/Proyecto_GestionNomina/blob/6c42fe41ebe2db3ba83a664614df2d7331eca963/Capturas/Inicio%20-%20Usuario%20Empleado.png)
 
 ![App Screenshot](https://github.com/rherndz/Proyecto_GestionNomina/blob/78d0b3fe02d3c4a670c07b19551423a51de14fd3/Capturas/Inicio%20-%20Usuario%20Administracion.png)
 
