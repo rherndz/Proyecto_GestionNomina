@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AF810773-352B-4137-9124-9092C8071AF3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LoginApp</RootNamespace>
+    <AssemblyName>LoginApp</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="agregar-empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agregar-empleado.Designer.cs">
+      <DependentUpon>agregar-empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="crear_usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="crear_usuario.Designer.cs">
+      <DependentUpon>crear_usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editar-empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editar-empleados.Designer.cs">
+      <DependentUpon>editar-empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eliminar-empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eliminar-empleado.Designer.cs">
+      <DependentUpon>eliminar-empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="generar_planilla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generar_planilla.Designer.cs">
+      <DependentUpon>generar_planilla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio_admin.Designer.cs">
+      <DependentUpon>Inicio_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio_administracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio_administracion.Designer.cs">
+      <DependentUpon>Inicio_administracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inicio_sesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inicio_sesion.Designer.cs">
+      <DependentUpon>inicio_sesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio_empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio_empleado.Designer.cs">
+      <DependentUpon>Inicio_empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mostrar-Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mostrar-Empleados.Designer.cs">
+      <DependentUpon>mostrar-Empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="seccion-editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seccion-editar.Designer.cs">
+      <DependentUpon>seccion-editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vacacion-empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vacacion-empleado.Designer.cs">
+      <DependentUpon>vacacion-empleado.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="agregar-empleado.resx">
+      <DependentUpon>agregar-empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crear_usuario.resx">
+      <DependentUpon>crear_usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editar-empleados.resx">
+      <DependentUpon>editar-empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eliminar-empleado.resx">
+      <DependentUpon>eliminar-empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generar_planilla.resx">
+      <DependentUpon>generar_planilla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio_admin.resx">
+      <DependentUpon>Inicio_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio_administracion.resx">
+      <DependentUpon>Inicio_administracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inicio_sesion.resx">
+      <DependentUpon>inicio_sesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio_empleado.resx">
+      <DependentUpon>Inicio_empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mostrar-Empleados.resx">
+      <DependentUpon>mostrar-Empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="seccion-editar.resx">
+      <DependentUpon>seccion-editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vacacion-empleado.resx">
+      <DependentUpon>vacacion-empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
